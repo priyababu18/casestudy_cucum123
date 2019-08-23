@@ -27,114 +27,114 @@ public class demo_1 {
 		
 	}
 
-//	@Then("user clicks on the SignUp link")
-//	public void user_clicks_on_the_SignUp_link() {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .xpath("//*[@id=\"header\"]/div[1]/div/div/div[2]/div/ul/li[2]/a")).click();
-//	}
-//
-//	@Then("enter username {string}")
-//	public void enter_username(String string) {
-////	     Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("userName")).sendKeys(string);
-//	}
-//
-//	@Then("enter firstname {string}")
-//	public void enter_firstname(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		 driver.findElement(By .name("firstName")).sendKeys(string);
-//
-//	}
-//
-//	@Then("enter lastname {string}")
-//	public void enter_lastname(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("lastName")).sendKeys(string);
-//	}
-//
-//	@Then("enter password {string}")
-//	public void enter_password(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("password")).sendKeys(string);
-//	}
-//
-//	@Then("enter confirm password {string}")
-//	public void enter_confirm_password(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("confirmPassword")).sendKeys(string);
-//	}
-//
-//	@Then("enter gender")
-//	public void enter_gender() {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .xpath("//*[@id=\"gender\"]")).click();
-//	}
-//
-//	@Then("enter email {string}")
-//	public void enter_email(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		 driver.findElement(By .name("emailAddress")).sendKeys(string);
-//	}
-//
-//	@Then("enter mobile number {string}")
-//	public void enter_mobile_number(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		 driver.findElement(By .name("mobileNumber")).sendKeys(string);
-//	}
-//
-//	@Then("enter dob {string}")
-//	public void enter_dob(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("dob")).sendKeys(string);
-//	}
-//
-//	@Then("enter address {string}")
-//	public void enter_address(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("address")).sendKeys(string);
-//	}
-//
-//	@Then("enter security question")
-//	public void enter_security_question() {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		Select s=new Select (driver.findElement(By .name("securityQuestion")));
-//		s.selectByValue("411011");
-//	}
-//
-//	@Then("enter answer {string}")
-//	public void enter_answer(String string) {
-//	    // Write code here that turns the phrase above into concrete actions
-////    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("answer")).sendKeys(string);
-//		
-//	}
-//
-//	@Then("user clicks the registration button")
-//	public void user_clicks_the_registration_button() {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		driver.findElement(By .name("Submit")).click(); 
-//	}
+	@Then("user clicks on the SignUp link")
+	public void user_clicks_on_the_SignUp_link() {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .xpath("//*[@id=\"header\"]/div[1]/div/div/div[2]/div/ul/li[2]/a")).click();
+	}
 
-//	@Then("verify the registration process")
-//	public void verify_the_registration_process() {
-//	    // Write code here that turns the phrase above into concrete actions
-////	    throw new cucumber.api.PendingException();
-//		String b=driver.findElement(By .xpath("//*[@id=\"header\"]/div[1]/div/div/div[2]/div/ul/a")).getText();
-//		Assert.assertEquals("SignOut",b);
-//	}
+	@Then("enter username {string}")
+	public void enter_username(String string) {
+//	     Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("userName")).sendKeys(string);
+	}
+
+	@Then("enter firstname {string}")
+	public void enter_firstname(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		 driver.findElement(By .name("firstName")).sendKeys(string);
+
+	}
+
+	@Then("enter lastname {string}")
+	public void enter_lastname(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("lastName")).sendKeys(string);
+	}
+
+	@Then("enter password {string}")
+	public void enter_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("password")).sendKeys(string);
+	}
+
+	@Then("enter confirm password {string}")
+	public void enter_confirm_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("confirmPassword")).sendKeys(string);
+	}
+
+	@Then("enter gender")
+	public void enter_gender() {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .xpath("//*[@id=\"gender\"]")).click();
+	}
+
+	@Then("enter email {string}")
+	public void enter_email(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		 driver.findElement(By .name("emailAddress")).sendKeys(string);
+	}
+
+	@Then("enter mobile number {string}")
+	public void enter_mobile_number(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		 driver.findElement(By .name("mobileNumber")).sendKeys(string);
+	}
+
+	@Then("enter dob {string}")
+	public void enter_dob(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("dob")).sendKeys(string);
+	}
+
+	@Then("enter address {string}")
+	public void enter_address(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("address")).sendKeys(string);
+	}
+
+	@Then("enter security question")
+	public void enter_security_question() {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		Select s=new Select (driver.findElement(By .name("securityQuestion")));
+		s.selectByValue("411011");
+	}
+
+	@Then("enter answer {string}")
+	public void enter_answer(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+//    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("answer")).sendKeys(string);
+		
+	}
+
+	@Then("user clicks the registration button")
+	public void user_clicks_the_registration_button() {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		driver.findElement(By .name("Submit")).click(); 
+	}
+
+	@Then("verify the registration process")
+	public void verify_the_registration_process() {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new cucumber.api.PendingException();
+		String b=driver.findElement(By .xpath("//*[@id=\"header\"]/div[1]/div/div/div[2]/div/ul/a")).getText();
+		Assert.assertEquals("SignOut",b);
+	}
 
 	@Then("user provides valid username {string}")
 	public void user_provides_valid_username(String string) {
