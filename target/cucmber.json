@@ -1,0 +1,228 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 34,
+        "name": "Login validation for TestMeApp",
+        "description": "",
+        "id": "testme-app-casestudy;login-validation-for-testmeapp;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 51802886700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user provides valid username \"lalitha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"lalitha\"",
+                  "offset": 29
+                }
+              ],
+              "location": "demo_1.user_provides_valid_username(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 218175500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user provides valid password \"password123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password123\"",
+                  "offset": 29
+                }
+              ],
+              "location": "demo_1.user_provides_valid_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1546048400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "demo_1.user_clicks_on_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41963700,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user verifies the login status",
+            "match": {
+              "location": "demo_1.user_verifies_the_login_status()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "search for products",
+        "description": "",
+        "id": "testme-app-casestudy;search-for-products",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 146180000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user enters the item name to be searched",
+            "match": {
+              "location": "demo_1.user_enters_the_item_name_to_be_searched()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9055575600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user click on find details",
+            "match": {
+              "location": "demo_1.user_click_on_find_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5500214800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "add to cart",
+            "match": {
+              "location": "demo_1.add_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5579752400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user proceeds to payment",
+            "match": {
+              "location": "demo_1.user_proceeds_to_payment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [Your orde has been confirmed] but found [Your order has been confirmed]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat casestudy_cucum.demo_1.continue_the_payment_process(demo_1.java:232)\r\n\tat ✽.continue the payment process(TestMe/Register.feature:42)\r\n",
+              "duration": 9643613900,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "continue the payment process",
+            "match": {
+              "location": "demo_1.continue_the_payment_process()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "The one where the user moves to cart without adding any item in it",
+        "description": "",
+        "id": "testme-app-casestudy;the-one-where-the-user-moves-to-cart-without-adding-any-item-in-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d76.0.3809.100)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027HDC2-D-6XMHXH2\u0027, ip: \u002710.211.154.143\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_191\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\TRAINI~1.15\\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58898}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 76.0.3809.100, webStorageEnabled: true}\nSession ID: ef1edfde5b58b3adc8a05a12a66c690e\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"header\"]/div[1]/div/div/div[2]/div/ul/li[1]/a}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat casestudy_cucum.demo_1.alex_has_registered_into_TestMeApp(demo_1.java:244)\r\n\tat ✽.Alex has registered into TestMeApp(TestMe/Register.feature:45)\r\n",
+              "duration": 30732583800,
+              "status": "failed"
+            },
+            "line": 45,
+            "name": "Alex has registered into TestMeApp",
+            "match": {
+              "location": "demo_1.alex_has_registered_into_TestMeApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10500,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "Alex search for a product like headphone",
+            "match": {
+              "location": "demo_1.alex_search_for_a_product_like_headphone()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4400,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Alex go for payment without adding items into cart",
+            "match": {
+              "location": "demo_1.alex_go_for_payment_without_adding_items_into_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3400,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "TestMe doesnt display the cart icon",
+            "match": {
+              "location": "demo_1.testme_doesnt_display_the_cart_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "TestMe app casestudy",
+    "description": "",
+    "id": "testme-app-casestudy",
+    "keyword": "Feature",
+    "uri": "TestMe/Register.feature",
+    "tags": []
+  }
+]
