@@ -228,7 +228,7 @@ public class demo_1 {
 		   //paynow
 		   driver.findElement(By .xpath("//*[@id=\"horizontalTab\"]/div[2]/div/div/div/div/form/div/div[2]/input")).click();
 		   String s=driver.findElement(By .xpath("/html/body/b/section/div/div/div/div[2]/p")).getText();
-		   String s1="Your orde has been confirmed";
+		   String s1="Your order has been confirmed";
 		   Assert.assertEquals(s,s1);
 
 	}
